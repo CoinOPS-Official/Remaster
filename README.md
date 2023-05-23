@@ -29,13 +29,13 @@ batch_remaster(r'C:\CoinOPS\collections\Arcades\medium_artwork\video', target_db
 ```
 
 Create Mame .ini files from reference media (sound or movie) under a specified folder
-```
+``` python
 from remaster import batch_mame_ini
 batch_mame_ini(r'C:\__reference__', target_db=-24)
 ```
 
 Remaster a single media file
-```
+``` python
 from remaster import Media
 media = Media(r'C:\CoinOPS\collections\Arcades\medium_artwork\video\pacman.mp4', target_db=-24)
 media.remaster(r'C:\pacman.remastered.mp4', target_db=-24)
@@ -43,7 +43,7 @@ media.remaster(r'C:\pacman.remastered.mp4', target_db=-24)
 ````
 
 Get the loudness difference between a reference media and the target loudness
-```
+``` python
 from remaster import Media
 media = Media(r'C:\__reference__\super_mario_galaxy_gameplay.wav')
 
