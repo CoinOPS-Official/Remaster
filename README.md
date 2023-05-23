@@ -11,7 +11,7 @@ Without remaster, frontend media sound levels will be all over the place (becaus
 * Python 3.8 and above
 
 ### Installation
-[Grab the latest wheel](https://github.com/CoinOPS-Official/Remaster/releases)
+Download [the latest wheel](https://github.com/CoinOPS-Official/Remaster/releases)
 
 Install the wheel:
 ```
