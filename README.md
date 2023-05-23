@@ -22,6 +22,9 @@ python -m pip install remaster-0.1.0-py3-none-any.whl
 Batch normalize all files under a directory recursively.
 ```
 from remaster import batch_remaster
+
+# source videos will not be overwritten, normalized video will be in a folder
+# named after the target_db value
 batch_remaster(r'C:\CoinOPS\collections\Arcades\medium_artwork\video', target_db=-24)
 ```
 
