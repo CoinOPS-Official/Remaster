@@ -20,7 +20,7 @@ python -m pip install remaster-0.1.0-py3-none-any.whl
 
 ### Usage
 Batch normalize all files under a directory recursively.
-```
+``` python
 from remaster import batch_remaster
 
 # source videos will not be overwritten, normalized video will be in a folder
