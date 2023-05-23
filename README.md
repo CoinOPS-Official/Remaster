@@ -34,13 +34,21 @@ from remaster import batch_mame_ini
 batch_mame_ini(r'C:\__reference__', target_db=-24)
 ```
 
+Remaster a single media file
+```
+from remaster import Media
+media = Media(r'C:\CoinOPS\collections\Arcades\medium_artwork\video\pacman.mp4', target_db=-24)
+media.remaster(r'C:\pacman.remastered.mp4', target_db=-24)
+
+````
+
 Get the loudness difference between a reference media and the target loudness
 ```
 from remaster import Media
-media = Media(r'C:\__reference__\super_mario_galaxy_gameplay.wav', target_db=-24)
+media = Media(r'C:\__reference__\super_mario_galaxy_gameplay.wav')
 
 # prints a sound adjustment value needed so emulator loudness matches frontend
-print(media.difference()) # will return some float value
-print(media.difference(rounded=True)) # same but as a rounded integer (for Mame)
+print(media.difference(target_db=-24)) # will return some float value
+print(media.difference(target_db=-24, rounded=True)) # same but as a rounded integer (for Mame)
 ```
 
