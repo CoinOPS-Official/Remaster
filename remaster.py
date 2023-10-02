@@ -135,7 +135,10 @@ class Media(object):
                 difference *= -1
                 
         if rounded:
-            return round(difference)
+            try:
+                return round(difference)
+            except:
+                return 0
         
         return difference
     
