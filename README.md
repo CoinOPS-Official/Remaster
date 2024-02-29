@@ -37,7 +37,7 @@ batch_mame_ini(r'C:\__reference__', target_db=-24)
 Remaster a single media file
 ``` python
 from remaster import Media
-media = Media(r'C:\CoinOPS\collections\Arcades\medium_artwork\video\pacman.mp4', target_db=-24)
+media = Media(r'C:\CoinOPS\collections\Arcades\medium_artwork\video\pacman.mp4')
 media.remaster(r'C:\pacman.remastered.mp4', target_db=-24)
 
 ````
